@@ -1,0 +1,130 @@
+class Form {
+    constructor() {
+        //this.title = createElement("h2");
+        this.button1 = createButton("Season1");
+        this.button2 = createButton("Season2");
+        //     this.beginbutton = createButton("Begin>")
+    }
+
+    display() {
+        //1st screen
+        console.log("abcff");
+        //this.title.html("Welcome to the world of cyber crime!");
+
+        this.title.position(400, 150);
+
+
+        this.button1.position(450, 300);
+        this.button2.position(450, 400);
+        this.button1.mousePressed(() => {
+            this.title.hide();
+            this.button1.hide();
+            this.button2.hide();
+
+            var insights = createElement("h2");
+            insights.html("Insights...");
+            insights.position(450, 300);
+            var proceedbutton = createButton("Proceed>");
+            proceedbutton.position(500, 400);
+            proceedbutton.mousePressed(() => {
+                insights.hide();
+                proceedbutton.hide();
+                var intro = createElement("h2");
+                intro.html("Season1:Episode1:Gmail Hacked!");
+                intro.position(500, 400);
+                var description = createElement("h3");
+                description.html("description about Episode1");
+                description.position(500, 430);
+                var beginbutton = createButton("Proceed>");
+
+                beginbutton.mousePressed(() => {
+                    intro.hide();
+                    description.hide();
+                    beginbutton.hide();
+                    var situation = createElement("h2");
+                    situation.html("Situation");
+                    var OptionA = createButton("Option A");
+                    OptionA.position(100, 500);
+                    var OptionB = createButton("Option B");
+                    OptionB.position(100, 600);
+                    var OptionC = createButton("Option C");
+                    OptionC.position(300, 500);
+                    var OptionD = createButton("Option D");
+                    OptionD.position(300, 600);
+                    OptionA.mousePressed(() => {
+                        var Adc = createElement("h2");
+                        Adc.html("Des. on answerA")
+                        Adc.position(500, 500);
+                    });
+                    OptionB.mousePressed(() => {
+                        var Bdc = createElement("h2");
+                        Bdc.html("Des. on answerB")
+                        Bdc.position(500, 500);
+                    });
+                    OptionC.mousePressed(() => {
+                        var Cdc = createElement("h2");
+                        Cdc.html("Des. on answerC")
+                        Cdc.position(500, 500);
+                    });
+                    OptionD.mousePressed(() => {
+                        var Ddc = createElement("h2");
+                        Ddc.html("Des. on answerD")
+                        Ddc.position(500, 500);
+
+                    });
+                    console.log("2345")
+                    var Next1 = createButton("What's Next")
+                    Next1.position(400, 300);
+                    Next1.mousePressed(() => {
+                        situation.hide();
+                        OptionA.hide();
+                        OptionB.hide();
+                        OptionC.hide();
+                        OptionD.hide();
+                        console.log("dff")
+                       var situation2 = createElement("h2");
+                        situation2.html("Situation2");
+
+                        var OptionA2 = createButton("Option A1");
+                        OptionA2.position(100, 500);
+                        var OptionB2 = createButton("Option B1");
+                        OptionB2.position(100, 600);
+                        var OptionC2 = createButton("Option C1");
+                        OptionC2.position(300, 500);
+                        var OptionD2 = createButton("Option D1");
+                        OptionD2.position(300, 600);
+                        OptionA2.mousePressed(() => {
+                            var Adc2 = createElement("h2");
+                            Adc2.html("Des. on answerA1")
+                            Adc2.position(500, 500);
+                        });
+                        OptionB2.mousePressed(() => {
+                            var Bdc2 = createElement("h2");
+                            Bdc2.html("Des. on answerB1")
+                            Bdc2.position(500, 500);
+                        });
+                        OptionC2.mousePressed(() => {
+                            var Cdc2 = createElement("h2");
+                            Cdc2.html("Des. on answerC1")
+                            Cdc2.position(500, 500);
+                        });
+                        OptionD2.mousePressed(() => {
+                            var Ddc2 = createElement("h2");
+                            Ddc2.html("Des. on answerD1")
+                            Ddc2.position(500, 500);
+
+                        });
+
+                        
+    
+                    });
+
+                });
+
+            });
+        });
+
+
+    }
+}
+
